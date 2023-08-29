@@ -12,6 +12,11 @@
 	},
 	"license": "MIT",
 	"main": "dist/index.js",
+	"exports": {
+		"./missing-types": {
+			"types": "./iconify-types.d.ts"
+		}
+	},
 	"engines": {
 		"parcel": "2.x"
 	},
