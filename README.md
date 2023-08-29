@@ -4,6 +4,8 @@ A parcel plugin to add iconify icons
 
 ## Usage
 
+To install, run `npm install -D parcel-resolver-iconify parcel-transformer-iconify` (you need both packages for it to work)
+
 ```html
 <!-- Will be replaced as svg tag -->
 <iconify-icon icon="mdi:video"></iconify-icon>
@@ -16,7 +18,35 @@ A parcel plugin to add iconify icons
 </style>
 
 <script type="module">
-    // mdiVideo be replaced as svg string
+    // Will be replaced as svg string
     import mdiVideo from 'iconify-icon:mdi/video'
 </script>
 ```
+
+For typescript typing, add `/// <reference types="parcel-resolver-iconify/missing-types" />` to a ts or .d.ts file or add `"compilerOptions": { "types": ["parcel-resolver-iconify/missing-types"] }` to tsconfig.json
+
+Example .parcelrc file
+
+```json5
+{
+    "extends": "@parcel/config-default",
+    "transformers": {
+        "*.html": [
+            "parcel-transformer-iconify",
+            "...",
+        ],
+        "iconify-icon:*": [
+            "parcel-transformer-iconify",
+            "...",
+        ],
+    },
+    "resolvers": [
+        "parcel-resolver-iconify",
+        "...",
+    ]
+}
+```
+
+---
+
+I didn't know [unplugin-icons](https://github.com/antfu/unplugin-icons) when I first made this plugin at the begining of 2023, so the format and configurations're not compatible, and I don't have much time to make it so (or make support in unplugin icons), but I feel like I should publish this anyway since it lacks support for parcel
