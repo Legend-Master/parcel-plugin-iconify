@@ -1,0 +1,10 @@
+{
+    "name": "parcel-iconify",
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch"
+    }
+}
