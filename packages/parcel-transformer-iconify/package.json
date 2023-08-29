@@ -1,6 +1,7 @@
 {
 	"name": "parcel-transformer-iconify",
 	"version": "1.0.0",
+	"license": "MIT",
 	"main": "dist/index.js",
 	"engines": {
 		"parcel": "2.x"
