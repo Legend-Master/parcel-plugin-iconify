@@ -13,6 +13,9 @@
 	"license": "MIT",
 	"main": "dist/index.js",
 	"exports": {
+		".": {
+			"default": "./dist/index.js"
+		},
 		"./missing-types": {
 			"types": "./iconify-types.d.ts"
 		}
