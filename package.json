@@ -6,6 +6,7 @@
     ],
     "scripts": {
         "build": "tsc --build",
-        "watch": "tsc --build --watch"
+        "watch": "tsc --build --watch",
+        "publish": "npm run build && cd ./packages/parcel-resolver-iconify && npm publish && cd ../parcel-transformer-iconify && npm publish"
     }
 }
