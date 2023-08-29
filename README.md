@@ -6,6 +6,8 @@ A parcel plugin to add iconify icons
 
 To install, run `npm install -D parcel-resolver-iconify parcel-transformer-iconify` (you need both packages for it to work)
 
+Note: I didn't optimize this yet, so it will download the entire iconify icon set (300+MB unziped)
+
 ```html
 <!-- Will be replaced as svg tag -->
 <iconify-icon icon="mdi:video"></iconify-icon>
