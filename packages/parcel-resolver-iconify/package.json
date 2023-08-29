@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Legend-Master/parcel-plugin-iconify"
+		"url": "git+https://github.com/Legend-Master/parcel-plugin-iconify.git"
 	},
 	"license": "MIT",
 	"main": "dist/index.js",
