@@ -1,7 +1,7 @@
 {
 	"name": "parcel-resolver-iconify",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"engines": {
 		"parcel": "2.x"
 	},

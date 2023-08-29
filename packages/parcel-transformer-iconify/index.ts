@@ -13,7 +13,7 @@ async function addXmlns(svg: string) {
 
 async function loadIcon(fullname: string, separator: string) {
 	const [prefix, name] = fullname.split(separator)
-	const svg = await loadNodeIcon(prefix, name)
+	const svg = await loadNodeIcon(prefix!, name!)
 	if (!svg) {
 		throw Error(`Can't find an icon matching ${fullname}`)
 	}

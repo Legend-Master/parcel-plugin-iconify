@@ -1,17 +1,11 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "CommonJS",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "outDir": "dist",
-
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-    },
-    "include": [
-        "packages/parcel-transformer-iconify",
-        "packages/parcel-resolver-iconify",
+    "files": [],
+    "references": [
+        {
+            "path": "./packages/parcel-resolver-iconify"
+        },
+        {
+            "path": "./packages/parcel-transformer-iconify"
+        },
     ]
 }
