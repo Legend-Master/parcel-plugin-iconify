@@ -8,5 +8,9 @@
         "build": "tsc --build",
         "watch": "tsc --build --watch",
         "publish": "npm run build && cd ./packages/parcel-resolver-iconify && npm publish && cd ../parcel-transformer-iconify && npm publish"
+    },
+    "devDependencies": {
+        "@types/node": "20.x",
+        "typescript": "^5.3.3"
     }
 }
