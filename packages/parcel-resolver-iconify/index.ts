@@ -1,7 +1,5 @@
+import path from 'node:path'
 import { Resolver } from '@parcel/plugin'
-import path from 'path'
-// Parcel can't handle this...
-// import path from 'node:path'
 
 export default new Resolver({
 	async resolve({ pipeline, specifier, dependency }) {
