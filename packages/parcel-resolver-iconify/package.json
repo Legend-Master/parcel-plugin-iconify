@@ -24,6 +24,6 @@
 		"parcel": "2.x"
 	},
 	"dependencies": {
-		"@parcel/plugin": "^2.10.3"
+		"@parcel/plugin": "^2.12.0"
 	}
 }

@@ -2,7 +2,8 @@
     "name": "parcel-iconify",
     "private": true,
     "workspaces": [
-        "packages/*"
+        "packages/*",
+        "example"
     ],
     "scripts": {
         "build": "tsc --build",
@@ -11,6 +12,6 @@
     },
     "devDependencies": {
         "@types/node": "20.x",
-        "typescript": "^5.3.3"
+        "typescript": "^5.4.3"
     }
 }

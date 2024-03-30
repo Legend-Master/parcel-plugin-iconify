@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#menu {
+				width: 1em;
+				height: 1em;
+				background-image: url(iconify-icon:mdi/menu);
+			}
+		</style>
+		<script type="module">
+			import mdiVideo from 'iconify-icon:mdi/video'
+			document.getElementById('video').innerHTML = mdiVideo
+		</script>
+	</head>
+	<body>
+		<div id="menu"></div>
+		<div id="video"></div>
+		<iconify-icon icon="mdi:gear"></iconify-icon>
+	</body>
+</html>
